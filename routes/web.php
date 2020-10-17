@@ -25,7 +25,11 @@ Route::get('/login', function () {
 })->name('login');
 
 
-
+Route::get('/artisan/storage', function() {
+    $command = 'storage:link';
+    $result = \Illuminate\Support\Facades\Artisan::call($command);
+    return \Illuminate\Support\Facades\Artisan::output();
+});
 
 
 Route::post('/login', 'LoginController@login')->name('login');
