@@ -9,6 +9,7 @@ use App\Product;
 use App\Tag;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Storage;
 
@@ -47,13 +48,17 @@ class ProductController extends Controller
             'category' => 'required',
         ]);
 
-        $productPic = $request->image->store('products');
+        $image = $request->file('image');
 
-        $image = Image::create([
+        $extension = $image->getClientOriginalExtension();
+        $imageName = sha1(time());
+        $file = Storage::disk('public')->put('/uploads/' . $imageName . '.' . $extension ,File::get($image));
 
-            'name' => $productPic,
-            'type' => 2
-        ]);
+
+        $note = new Image();
+        $note->name =$imageName . '.' . $extension;
+        $note->type = 2;
+        $note->save();
 
         $newProduct = Product::create([
             'name' => $request->name,
@@ -65,7 +70,7 @@ class ProductController extends Controller
             'is_available' => $request->is_available,
             'trend' => $request->trend,
             'best_seller' => $request->best_seller,
-            'image_id' => $image->id,
+            'image_id' => $note->id,
             'category_id' => $request->category,
             'user_id' => auth()->user()->id
         ]);
@@ -120,22 +125,20 @@ class ProductController extends Controller
 
         $data = $request->all();
 
-        if ($request->hasFile('image')) {
+        $image = $request->file('image');
+
+        $extension = $image->getClientOriginalExtension();
+        $imageName = sha1(time());
+        $file = Storage::disk('public')->put('/uploads/' . $imageName . '.' . $extension ,File::get($image));
 
 
-            $productPic = $request->image->store('products');
+        $note = new Image();
+        $note->name =$imageName . '.' . $extension;
+        $note->type = 2;
+        $note->save();
 
-            $image = Image::create([
+            $data['image_id'] = $note->id;
 
-                'name' => $productPic,
-                'type' => 2
-            ]);
-
-            $proPic = $product->image->name;
-            Storage::delete($proPic);
-
-            $data['image_id'] = $image->id;
-        }
 
         if ($request->tags) {
 

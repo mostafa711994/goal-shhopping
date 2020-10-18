@@ -66,7 +66,7 @@
                                     @foreach($categories as $category)
                                         <tr>
                                             <td style="width:5%">
-                                                <img src="{{url('/storage/'.$category->image->name)}}" width="100px"
+                                                <img src="{{asset('uploads/'.$category->image->name)}}" width="100px"
                                                      height="50px" alt="">
                                             </td>
                                             <td>{{$category->name}}</td>
@@ -114,7 +114,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <p class="text-center text-bold">Are you sure to delete
-                                        this comment permanently?</p>
+                                        this category permanently?</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"

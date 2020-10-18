@@ -53,7 +53,7 @@
                                 <div class="col-md-6 col-lg-4">
                                     <div class="card text-center card-product">
                                         <div class="card-product__img">
-                                            <img class="card-img" src="{{url('/storage/'.$product->image->name)}}"
+                                            <img class="card-img" src="{{url('uploads/'.$product->image->name)}}"
                                                  alt="">
                                             <ul class="card-product__imgOverlay">
                                                 <li>
@@ -78,10 +78,10 @@
 
                             @empty
                                 <p class="bold" style="text-align: center;">
-{{--                                    No result found for <strong>{{request()->query('search')}}</strong>--}}
+                                    <strong> No products in this category for now </strong>
                                 </p>
                             @endforelse
-                                {{$products->links()}}
+                               {{$products->links()}}
                         </div>
 
                     </section>

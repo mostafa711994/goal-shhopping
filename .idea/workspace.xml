@@ -21,6 +21,24 @@
   <component name="ChangeListManager">
     <list default="true" id="7381deec-b140-4ce3-8c4c-49e0d1742b7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/trashProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/trashProduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/ui/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/ui/topbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/paginateCategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/paginateCategory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/paginateShop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/paginateShop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/paginateTag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/paginateTag.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/tag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/tag.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/ui/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/ui/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +188,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OCR2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -260,6 +278,11 @@
       <workItem from="1602946379280" duration="5432000" />
       <workItem from="1602957425208" duration="4218000" />
       <workItem from="1602966467575" duration="1954000" />
+      <workItem from="1602968532180" duration="1522000" />
+      <workItem from="1602975692192" duration="46000" />
+      <workItem from="1602975788823" duration="713000" />
+      <workItem from="1603024338855" duration="2320000" />
+      <workItem from="1603028888434" duration="2602000" />
     </task>
     <servers />
   </component>
@@ -287,13 +310,13 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="405" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.984@0.0.1280.984" timestamp="1602958349994" />
-    <state x="370" y="247" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602689737030">
+    <state x="370" y="247" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603031177929">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="370" y="247" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984@0.0.1280.984" timestamp="1602689737030" />
-    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1599639576886">
+    <state x="370" y="247" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984@0.0.1280.984" timestamp="1603031177929" />
+    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1603029825243">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1599639576886" />
+    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1603029825243" />
   </component>
 </project>

@@ -6,6 +6,7 @@ use App\Category;
 use App\Image;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 
@@ -30,18 +31,26 @@ class CategoryController extends Controller
             'name'=> 'required|unique:categories|max:50',
             'description' => 'required|max:100'
         ]);
-        $categoryPic = $request->image->store('categories');
+        $image = $request->file('image');
 
-        $image = Image::create([
-            'name' => $categoryPic,
-            'type' => 3
-        ]);
+        $extension = $image->getClientOriginalExtension();
+        $imageName = sha1(time());
+        $file = Storage::disk('public')->put('/uploads/' . $imageName . '.' . $extension ,File::get($image));
+
+
+        $note = new Image();
+        $note->name =$imageName . '.' . $extension;
+        $note->type = 3;
+        $note->save();
+
+
+
 
         Category::create([
             'name' =>$request->name,
             'description'=>$request->description,
             'user_id' => auth()->user()->id,
-            'image_id' => $image->id
+            'image_id' => $note->id
         ]);
 
         session()->flash('success','Category created successfully');
@@ -71,22 +80,21 @@ class CategoryController extends Controller
         ]);
         $data = $request->all();
 
-        if ($request->hasFile('image')) {
+
+            $image = $request->file('image');
+
+            $extension = $image->getClientOriginalExtension();
+            $imageName = sha1(time());
+            $file = Storage::disk('public')->put('/uploads/' . $imageName . '.' . $extension ,File::get($image));
 
 
-            $categoryPic = $request->image->store('categories');
+            $note = new Image();
+            $note->name =$imageName . '.' . $extension;
+            $note->type = 3;
+            $note->save();
 
-            $image = Image::create([
+            $data['image_id'] = $note->id;
 
-                'name' => $categoryPic,
-                'type' => 3
-            ]);
-
-            $catPic = $category->image->name;
-            Storage::delete($catPic);
-
-            $data['image_id'] = $image->id;
-        }
 
 
         $category->update($data);
@@ -107,9 +115,6 @@ class CategoryController extends Controller
                 return redirect(route('categories.index'));
             }
 
-        $catPic = $category->image->name;
-
-        Storage::delete($catPic);
 
         $category->delete();
 

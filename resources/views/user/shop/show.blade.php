@@ -33,7 +33,7 @@
                 <div class="col-lg-6">
                     <div class="owl-carousel owl-theme s_Product_carousel">
                         <div class="single-prd-item">
-                            <img class="img-fluid" src="{{url('/storage/'.$product->image->name)}}" alt="">
+                            <img class="img-fluid" src="{{url('uploads/'.$product->image->name)}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                                             <div class="media-body">
                                                 <h4>{{$comment->user->username}}</h4>
                                             </div>
-                                            
+
                                             <div>
                                                 <small>{{$comment->created_at}}</small>
                                             </div>

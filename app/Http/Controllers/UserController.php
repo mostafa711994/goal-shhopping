@@ -7,6 +7,7 @@ use App\Image;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -179,27 +180,25 @@ class UserController extends Controller
         $data = $request->all();
 
 
-        if ($request->hasFile('image')) {
+        $image = $request->file('image');
 
-            $profilePic = $request->image->store('profilePic');
-
-
-            $image = Image::create([
-
-                'name' => $profilePic,
-                'type' => 1
-            ]);
+        $extension = $image->getClientOriginalExtension();
+        $imageName = sha1(time());
+        $file = Storage::disk('public')->put('/uploads/' . $imageName . '.' . $extension ,File::get($image));
 
 
-            if ($user->image_id !== null) {
-                $proPic = $user->image->name;
-                Storage::delete($proPic);
-            }
+        $note = new Image();
+        $note->name =$imageName . '.' . $extension;
+        $note->type = 1;
+        $note->save();
 
 
-            $data['image_id'] = $image->id;
 
-        }
+
+
+            $data['image_id'] = $note->id;
+
+
         if( Auth::user()->password !== $request->password){
             $data['password'] = Hash::make($request->password);
         }

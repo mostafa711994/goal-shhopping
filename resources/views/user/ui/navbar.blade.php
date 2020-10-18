@@ -60,11 +60,11 @@
                                         <span class="mr-2 d-none d-lg-inline text-gray-600 small my-2">{{auth()->user()->username}}</span>
                                         @if(auth()->user()->image)
                                             <img class="img-profile rounded-circle"
-                                                 src="{{url('/storage/'.auth()->user()->image->name)}}" width="30px"
+                                                 src="{{url('uploads/'.auth()->user()->image->name)}}" width="30px"
                                                  height="30px">
                                         @else
                                             <img class="img-profile rounded-circle"
-                                                 src="{{asset('img/default.jpg')}}" width="30px"
+                                                 src="{{asset('img/default2.jpg')}}" width="30px"
                                                  height="30px">
                                         @endif
                                     </a>

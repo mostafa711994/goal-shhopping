@@ -84,7 +84,7 @@
                                     @foreach($products as $product)
                                         <tr>
                                             <td>
-                                                <img src="{{url('/storage/'.$product->image->name)}}" width="70px"
+                                                <img src="{{url('uploads/'.$product->image->name)}}" width="70px"
                                                      height="50px" alt="">
                                             </td>
                                             <td>{{$product->name}}</td>

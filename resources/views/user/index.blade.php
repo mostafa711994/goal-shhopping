@@ -40,7 +40,7 @@
             <div class="owl-carousel owl-theme hero-carousel">
                 @foreach($categories as $category)
                     <div class="hero-carousel__slide">
-                        <img src="{{url('/storage/'.$category->image->name)}}" alt="" width="80px" height="350px">
+                        <img src="{{url('uploads/'.$category->image->name)}}" alt="" width="80px" height="350px">
                         <a href="{{route('category',$category->id)}}" class="hero-carousel__slideOverlay">
                             <h3>{{$category->name}}</h3>
                             <p>{{$category->description}}</p>
@@ -65,7 +65,7 @@
                             <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="card text-center card-product">
                                     <div class="card-product__img">
-                                        <img class="card-img" src="{{url('/storage/'.$product->image->name)}}" alt="">
+                                        <img class="card-img" src="{{url('uploads/'.$product->image->name)}}" alt="">
                                         <ul class="card-product__imgOverlay">
                                             <li>
                                                 <button>
@@ -119,7 +119,7 @@
                             @if($product->best_seller === 'best seller')
                                 <div class="card text-center card-product">
                                     <div class="card-product__img">
-                                        <img class="img-fluid" src="{{url('/storage/'.$product->image->name)}}" alt="">
+                                        <img class="img-fluid" src="{{url('uploads/'.$product->image->name)}}" alt="">
                                         <ul class="card-product__imgOverlay">
                                             <li>
                                                 <button>

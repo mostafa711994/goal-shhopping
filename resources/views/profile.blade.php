@@ -35,7 +35,7 @@
                     <div class="card">
 
                         @if(auth()->user()->image)
-                            <img src="{{url('/storage/'.$user->image->name)}}" alt="John" style="width:100%">
+                            <img src="{{url('uploads/'.$user->image->name)}}" alt="John" style="width:100%">
 
                         @else
                             <img  src="{{asset('img/default2.jpg')}}" width="300px" height="200px">

@@ -2,7 +2,7 @@
     <div class="col-md-6 col-lg-4">
         <div class="card text-center card-product">
             <div class="card-product__img">
-                <img class="card-img" src="{{url('/storage/'.$product->image->name)}}"
+                <img class="card-img" src="{{url('uploads/'.$product->image->name)}}"
                      alt="">
                 <ul class="card-product__imgOverlay">
                     <li>
@@ -28,4 +28,4 @@
     </div>
 @endforeach
 
-{{$products->links()}}
+ {{$products->links()}}
