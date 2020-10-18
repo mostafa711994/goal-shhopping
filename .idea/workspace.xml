@@ -19,27 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7381deec-b140-4ce3-8c4c-49e0d1742b7b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/trashProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/trashProduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/ui/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/ui/topbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/paginateCategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/paginateCategory.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/paginateShop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/paginateShop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/paginateTag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/paginateTag.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/shop/tag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/shop/tag.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/ui/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/ui/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="7381deec-b140-4ce3-8c4c-49e0d1742b7b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -283,6 +263,7 @@
       <workItem from="1602975788823" duration="713000" />
       <workItem from="1603024338855" duration="2320000" />
       <workItem from="1603028888434" duration="2602000" />
+      <workItem from="1603034060473" duration="265000" />
     </task>
     <servers />
   </component>
