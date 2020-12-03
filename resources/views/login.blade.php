@@ -50,7 +50,7 @@
                     <form class="row login_form" action="{{route('login')}}" id="contactForm" method="POST">
                         @csrf
                         <div class="col-md-12 form-group">
-                            <input type="text" class="form-control" id="name" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+                            <input value="{{old('username')}}" type="text" class="form-control" id="name" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
                         </div>
                         <div class="col-md-12 form-group">
                             <input type="password" class="form-control" id="name" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">

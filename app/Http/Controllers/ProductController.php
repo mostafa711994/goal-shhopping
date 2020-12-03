@@ -125,19 +125,19 @@ class ProductController extends Controller
 
         $data = $request->all();
 
-        $image = $request->file('image');
-
-        $extension = $image->getClientOriginalExtension();
-        $imageName = sha1(time());
-        $file = Storage::disk('public')->put('/uploads/' . $imageName . '.' . $extension ,File::get($image));
-
-
-        $note = new Image();
-        $note->name =$imageName . '.' . $extension;
-        $note->type = 2;
-        $note->save();
-
-            $data['image_id'] = $note->id;
+//        $image = $request->file('image');
+//
+//        $extension = $image->getClientOriginalExtension();
+//        $imageName = sha1(time());
+//        $file = Storage::disk('public')->put('/uploads/' . $imageName . '.' . $extension ,File::get($image));
+//
+//
+//        $note = new Image();
+//        $note->name =$imageName . '.' . $extension;
+//        $note->type = 2;
+//        $note->save();
+//
+//            $data['image_id'] = $note->id;
 
 
         if ($request->tags) {

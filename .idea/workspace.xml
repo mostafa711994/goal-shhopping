@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7381deec-b140-4ce3-8c4c-49e0d1742b7b" name="Default Changelist" comment="" />
+    <list default="true" id="7381deec-b140-4ce3-8c4c-49e0d1742b7b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/pharmacy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pharmacy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,6 +163,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
     </include_path>
   </component>
   <component name="ProjectId" id="1h8wwN7kkBgM3MsncIxVeiq9Ptx" />
@@ -168,7 +181,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OCR2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -263,7 +276,30 @@
       <workItem from="1602975788823" duration="713000" />
       <workItem from="1603024338855" duration="2320000" />
       <workItem from="1603028888434" duration="2602000" />
-      <workItem from="1603034060473" duration="265000" />
+      <workItem from="1603034060473" duration="1820000" />
+      <workItem from="1603057834081" duration="644000" />
+      <workItem from="1603544754652" duration="645000" />
+      <workItem from="1603638831835" duration="27000" />
+      <workItem from="1603638893872" duration="767000" />
+      <workItem from="1604225535723" duration="652000" />
+      <workItem from="1604777082614" duration="89000" />
+      <workItem from="1604779576198" duration="67000" />
+      <workItem from="1604787369181" duration="13000" />
+      <workItem from="1604787406678" duration="23000" />
+      <workItem from="1604787516171" duration="740000" />
+      <workItem from="1604791755832" duration="25000" />
+      <workItem from="1605023080355" duration="61000" />
+      <workItem from="1605025768654" duration="14000" />
+      <workItem from="1605044722000" duration="22000" />
+      <workItem from="1605049502918" duration="167000" />
+      <workItem from="1605106056117" duration="4801000" />
+      <workItem from="1605564238890" duration="33000" />
+      <workItem from="1606493595024" duration="42000" />
+      <workItem from="1606493922605" duration="67000" />
+      <workItem from="1606494575001" duration="393000" />
+      <workItem from="1606495199406" duration="999000" />
+      <workItem from="1606583857185" duration="2179000" />
+      <workItem from="1606586497529" duration="437000" />
     </task>
     <servers />
   </component>
@@ -295,9 +331,9 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="370" y="247" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984@0.0.1280.984" timestamp="1603031177929" />
-    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1603029825243">
+    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1605564278754">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1603029825243" />
+    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1605564278754" />
   </component>
 </project>
